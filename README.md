@@ -5,6 +5,8 @@ Dual-compatible spinner verb skill package for:
 - Claude runtime skills via `claude.skill.json`
 - `skills.sh`-style instruction loading via `SKILL.md`
 
+![spinner-verb demo](./assets/spinner_verb_demo.gif)
+
 ## Output Contract
 
 Both layers return the same shape:
