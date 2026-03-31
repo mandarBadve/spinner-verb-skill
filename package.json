@@ -1,0 +1,29 @@
+{
+  "name": "spinner-verb-skill",
+  "version": "1.0.0",
+  "description": "Dual-compatible spinner verb skill for Claude runtime and skills.sh.",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "SKILL.md",
+    "claude.skill.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "claude-skill",
+    "skills-sh",
+    "typescript",
+    "spinner",
+    "verb"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}

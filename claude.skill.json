@@ -1,0 +1,42 @@
+{
+  "name": "spinner-verb",
+  "description": "Generate a random or deterministic verb for spinners, status messages, or agent feedback.",
+  "entrypoint": "dist/index.js",
+  "input_schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "verbs": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Optional custom verbs."
+      },
+      "mode": {
+        "type": "string",
+        "enum": [
+          "append",
+          "replace"
+        ],
+        "description": "Whether to append custom verbs to the defaults or replace them."
+      },
+      "seed": {
+        "type": "number",
+        "description": "Optional deterministic seed. Selection uses abs(seed) % verbs.length."
+      }
+    }
+  },
+  "output_schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "verb"
+    ],
+    "properties": {
+      "verb": {
+        "type": "string"
+      }
+    }
+  }
+}
