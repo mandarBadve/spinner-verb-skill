@@ -71,6 +71,17 @@ Example output:
 
 The `SKILL.md` file contains the same logic in instruction form so an agent can manually produce the same output contract without executing code.
 
+## Claude Code Usage
+
+For Claude Code subagents, copy [spinner-verb.md](/Users/double_cheese/Developer/Code/spinner-verb-skill/spinner-verb.md) into your Claude agents directory:
+
+```bash
+mkdir -p ~/.claude/agents
+cp spinner-verb.md ~/.claude/agents/spinner-verb.md
+```
+
+Then start Claude Code and run `/agents` to confirm `spinner-verb` is available.
+
 ## Publish
 
 This repository is structured so it can be packaged and published with:
